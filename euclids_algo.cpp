@@ -39,11 +39,12 @@ int gcdExtended(int a, int b, int *x, int *y)
 int main()
 {
 	int a = 10, b = 15;
-	cout<<GCD(a,b)<<"\n";
+	// cout<<gcd(a,b)<<"\n";
   a = 35, b = 15; 
-  
+  int x,y;
   int g = gcdExtended(a, b, &x, &y); 
   cout << "GCD(" << a << ", " << b << ") = " << g << endl;
+  cout<<"Equation: "<<a<<"*"<<x<<" + "<<b<<"*"<<y<<" = "<<g<<"\n";
 	return 0;
 }
 
